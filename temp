@@ -1,0 +1,6 @@
+int humidity=analogRead(A0);
+int percent=map(humidity,1023,400,0,100);
+int lux=map(humidity,1023,400,0,255);
+Serial.print("percent:");
+Serial.println(percent);
+delay(1000);
