@@ -49,7 +49,7 @@ analogWrite(G,230);
 analogWrite(R,R_lux);
 analogWrite(B,B_lux);
  if(percent<20){
-  motor.step(-1024);
+  motor.step(-1024);s
   delay(100);
   motor.step(1024);
   delay(500);
