@@ -1,0 +1,26 @@
+
+  int R = 3;
+  int B = 5;
+  int G = 6;
+  int lux=0;
+
+
+void setup() {
+
+pinMode(R,OUTPUT);
+pinMode(B,OUTPUT);
+
+}
+
+void loop() {
+
+int humidity=analogRead(A0);
+int percent=map(humidity,1023,400,0,100);
+int lux=map(humidity,1023,400,0,255);
+Serial.print("percent:");
+Serial.println(percent);
+Serial.print("lux:");
+Serial.println(lux);
+delay(1000);
+
+}
